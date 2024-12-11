@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="author" content="Anonymous">
+  <meta name="description" content=" A graphic library for javascript called p5.js">
+  <meta name="keywords" content="Obfuscation,Code,HTML,CSS,JavaScript">
+  <title>I am a p5.js sketch</title>
+</head>
+
+<!--CND to p5.js library and Matter.js-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.14.2/matter.js"></script>
+<!--Your P5.js skcetch obfuscated-->
+<script id="obfuscated-sketch">
+var _0x4174=['Bodies','Composites','create','circle','rectangle','Vmlgw','xuFfh','add','world','2|0|3|4|1|7|6|5','GBzlp','split','update','ZmTrk','vertices','pUBRF','yWdsi','stack','mesh','jPATZ','bodies','length','KaoES','KJYBY','acwBW','mpOQE','KaMKm','Engine','Render'];(function(_0x2d8f05,_0x4b81bb){var _0x4d74cb=function(_0x32719f){while(--_0x32719f){_0x2d8f05['push'](_0x2d8f05['shift']());}};_0x4d74cb(++_0x4b81bb);}(_0x4174,0x8f));var _0x2848=function(_0x2eccbb,_0x2982a7){_0x2eccbb=_0x2eccbb-0x0;var _0xb496fd=_0x4174[_0x2eccbb];return _0xb496fd;};var Engine=Matter[_0x2848('0x0')];var Render=Matter[_0x2848('0x1')];var World=Matter['World'];var Bodies=Matter[_0x2848('0x2')];var Composites=Matter[_0x2848('0x3')];var engine;var ball;var ground;var stack;function setup(){var _0x4fb916={'hhyVX':function(_0x358bdb,_0x5db0b1,_0x714b6a){return _0x358bdb(_0x5db0b1,_0x714b6a);},'Vmlgw':function(_0xe52371,_0xc64773){return _0xe52371/_0xc64773;},'xuFfh':function(_0x5d618f,_0x81488){return _0x5d618f*_0x81488;},'VPubw':function(_0x563a2d){return _0x563a2d();}};_0x4fb916['hhyVX'](createCanvas,0x4b0,0x258);engine=Engine[_0x2848('0x4')]();ball=Bodies[_0x2848('0x5')](0x1e,0x0,0x14,{'restitution':0x1,'friction':0x0,'density':0.003});var _0x3ad454={'isStatic':!![],'angle':Math['PI']*0x0};ground=Bodies[_0x2848('0x6')](_0x4fb916[_0x2848('0x7')](width,0x2),0x1f4,width,0xa,_0x3ad454);smallGround=Bodies[_0x2848('0x6')](0x32,0x1d6,0x64,0xa,{'isStatic':!![],'angle':_0x4fb916[_0x2848('0x8')](Math['PI'],0.2)});World[_0x2848('0x9')](engine[_0x2848('0xa')],[ground,ball,smallGround]);_0x4fb916['VPubw'](setupDominoes);}function draw(){var _0x21be5b={'GBzlp':_0x2848('0xb'),'ZmTrk':function(_0x2affc6,_0x39b04d){return _0x2affc6(_0x39b04d);},'pUBRF':function(_0x44f0f2,_0x3f7126){return _0x44f0f2(_0x3f7126);},'yWdsi':function(_0x2afabd,_0x2c4081){return _0x2afabd(_0x2c4081);}};var _0x5a9741=_0x21be5b[_0x2848('0xc')][_0x2848('0xd')]('|'),_0x1a495e=0x0;while(!![]){switch(_0x5a9741[_0x1a495e++]){case'0':Engine[_0x2848('0xe')](engine);continue;case'1':drawDominoes();continue;case'2':_0x21be5b['ZmTrk'](background,0x0);continue;case'3':_0x21be5b[_0x2848('0xf')](fill,0xff);continue;case'4':_0x21be5b[_0x2848('0xf')](drawVertices,ball[_0x2848('0x10')]);continue;case'5':_0x21be5b[_0x2848('0x11')](drawVertices,smallGround[_0x2848('0x10')]);continue;case'6':_0x21be5b['yWdsi'](drawVertices,ground['vertices']);continue;case'7':_0x21be5b[_0x2848('0x12')](fill,0x80);continue;}break;}}function setupDominoes(){dominoGrid=Composites[_0x2848('0x13')](0x78,0x12c,0x1e,0x1,0x14,0x0,(_0x3e108d,_0x1e8d42)=>{return Bodies['rectangle'](_0x3e108d,_0x1e8d42,0x5,0x96);});Composites[_0x2848('0x14')](dominoGrid,0x1e,0x1,![],{'stiffness':0.001,'lengh':0x0});World[_0x2848('0x9')](engine[_0x2848('0xa')],dominoGrid);}function drawDominoes(){var _0x23d36b={'jPATZ':function(_0x12fdd5,_0x132699){return _0x12fdd5(_0x132699);}};_0x23d36b[_0x2848('0x15')](fill,0xff);for(let _0x5d9df0 of dominoGrid[_0x2848('0x16')]){drawVertices(_0x5d9df0['vertices']);}}function drawVertices(_0x10319a){var _0x3d8b4b={'mpOQE':function(_0x47c41c,_0x3583d8){return _0x47c41c(_0x3583d8);},'bIJQv':function(_0x5d2bdc,_0x36adb4){return _0x5d2bdc<_0x36adb4;},'KaoES':function(_0x14f5da,_0x23f308){return _0x14f5da!==_0x23f308;},'acwBW':'KJYBY','KaMKm':function(_0x28e1a0,_0x5e0fa3,_0x44fc68){return _0x28e1a0(_0x5e0fa3,_0x44fc68);},'zeWLQ':function(_0x4960ea,_0x2e854c){return _0x4960ea(_0x2e854c);}};beginShape();for(var _0x54935c=0x0;_0x3d8b4b['bIJQv'](_0x54935c,_0x10319a[_0x2848('0x17')]);_0x54935c++){if(_0x3d8b4b[_0x2848('0x18')](_0x2848('0x19'),_0x3d8b4b[_0x2848('0x1a')])){fill(0xff);for(let _0x256a70 of dominoGrid['bodies']){_0x3d8b4b[_0x2848('0x1b')](drawVertices,_0x256a70[_0x2848('0x10')]);}}else{_0x3d8b4b[_0x2848('0x1c')](vertex,_0x10319a[_0x54935c]['x'],_0x10319a[_0x54935c]['y']);}}_0x3d8b4b['zeWLQ'](endShape,CLOSE);}
+
+
+</script>
+
+</body>
+
+</html>
